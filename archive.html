@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fuel cell perusal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">   
+    <!--bootstrap links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="Images/fcp_logo.jpg">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body class="body-index">
+    <header>
+        <div id="top">
+            <img height = "10%"width = "100%" src="/Images/title_bg1.png">
+        </div>
+    </header>
+       <nav id="head">
+            <div class="navbar navbar-expand-md bg-dark navbar-dark" id="navigator">
+                    <!--navbar name-->
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php"><i class='fas fa-home'></i> Home</a>     
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fuelcells.html">Fuel cell fundamentals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="project.html">Model descriptions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="simulations.html">Simulations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="archive.html">Archives</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">The Team</a>
+                        </li>                               
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+        <div class="container" id="super">
+            <table border="4" bordercolor=white align="center" class="my-special-table" style="background: rgba(36, 94, 128,0.75);"> 
+                <tr>
+                    <td>Sl.No.</td>
+                    <td>Model Version</td>
+                    <td>Date</td>
+                    <td>Description</td>
+                    <td>Excel sheet model</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td><a class="download-link" target="_blank" href="/Archives/v1.0.1.html" >v1.0.1</a></td>
+                    <td>02/02/2020</td>
+                    <td align="justify">This model simulates the operation of a PEM Fuel Cell and estimates the activation, ohmic and concentration losses by taking information from the polarization curve provided in the manufacturer's data sheet of a fuel cell. The user is required to input the information read from the polarization curve</td></p>
+                    <td><a class="download-link" href="/Documentation/1.0.1(protected).xlsx" target="_blank">Download v1.0.1 excel sheet</a></td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td><a class="download-link" target="_blank" href="/Archives/v1.1.1.html" >v1.1.1</a></td>
+                    <td>14/02/2020</td>
+                    <td> This is an updated version of v1.0.1. The following changes have been made : 
+                        <ul align="left">
+                            <li>The exchange current density calculation is made more accurate </li>
+                            <li>Activation loss is estimated precisely</li>
+                            <li>Concentration loss is updated and estimated precisely</li>
+                            <li>The user is able to analyse the losses plot </li>
+                        </ul></td>
+                    <td> --- </td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td><a class="download-link" target="_blank" href="/Archives/v2.0.1.html" >v2.0.1</a></td>
+                    <td>02/02/2020</td>
+                    <td align="justify">This model simulates the operation of a PEM Fuel Cell and estimates the activation, ohmic and concentration losses by taking certain user inputs. It does not require the user to have any datasheet and requires general information. It plots the polarization curve, it also gives information about different losses and power output along with their characterstics in form of plots.</td>
+                    <td><a class="download-link" href="/Documentation/2.0.1(protected).xlsx" target="_blank">Download v2.0.1 excel sheet</a></td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td><a class="download-link" target="_blank" href="/Archives/v2.1.1.html" >v2.1.1</a></td>
+                    <td>02/02/2020</td>
+                    <td align="justify">This model is an extension of model 2 version 1 wherein the parameters like exchange current density and charge transfer coefficients are calculated intrinsically.This model also gives us information about the different losses that exists and the power output of the cell.</td>
+                    <td><a class="download-link"href="/Documentation/2.1.1(protected).xlsx" target="_blank">Download v2.1.1 excel sheet </a></td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td><a class="download-link" target="_blank" href="/Archives/v2.2.1.html" >v2.2.1</a></td>
+                    <td>14/02/2020</td>
+                    <td align="justify"> This is the combined and updated version of v2.0.1 and v2.1.1. The following changes have been made : 
+                        <ul align="left">
+                            <li>Activation loss is updated and estimated precisely</li>
+                            <li>Ionic resistance is intrinsically calculated and varies dynamically</li>
+                            <li>Concentration loss plot is updated</li>
+                        </ul></td>
+                    <td> --- </td>
+                </tr>             
+            </table> <br><br>
+        </div>
+       <footer class="footer">
+        <br>
+        <h4 class = footer-info> 
+            <img width ="20%" height ="25%"src="/Images/fcp_logo.png">Fuel Cell Perusal 
+            <br> <br> <br>
+        </h4>
+         <h4 class="footer-contact"><br><br>
+            Contact us : 
+            <br> 
+            <img height="3%" width="6%"src="/Images/email.png"> team.fuelcell.perusal@gmail.com 
+            <br>    
+            <img height="7%" width="6%"src="/Images/phone.png"> +91 9738465015
+        </h4>
+        <h4 class="visitor"> <br><br>
+            Visitor count : <img src="Counter_images/counter.png" border="0" alt="web counter">
+        </h4>
+       
+    </footer>
+    </body>
+    </html>

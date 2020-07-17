@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fuel cell perusal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">   
+    <!--bootstrap links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="Images/fcp_logo.jpg">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body class="body-index">
+    <header>
+        <div id="top">
+            <img height = "10%"width = "100%" src="/Images/title_bg1.png">
+        </div>
+    </header>
+       <nav id="head">
+            <div class="navbar navbar-expand-md bg-dark navbar-dark" id="navigator">
+                    <!--navbar name-->
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.php"><i class='fas fa-home'></i> Home</a>     
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../fuelcells.html">Fuel cell fundamentals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../project.html">Model descriptions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../simulations.html">Simulations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../archive.html">Archives</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contactus.html">The Team</a>
+                        </li>                               
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+    <!-- <div class="sidebar">
+            <a class="sidebar-item" href="model1.html" style="color:green;">Input</a> <br>
+            <a href="#">Output</a> <br>
+            <a href="#">Detailed values</a> <br>
+            <a href="#">Download pdf report</a> <br>
+    </div> -->
+	<div class="container" id="superbody"> <!--holds both blocks-->
+	<div class="container" id="mainbody"> <!--block_1(formulae)-->
+		<main>
+	<br>
+	<p style="text-align: center;"><strong>The following Parameters are required as input from the user</strong></p>
+	<form action="/Archives/v2.1.1.php" method="post">
+		<table class="my-special-table" border="4" bordercolor="white" align="center">
+			<tr style="font-weight: 700;">
+				<td class="first-column">Quantity</td>
+				<td class="second-column">Value</td>
+				<td>Units</td>
+			</tr>
+			<tr>
+				<td class="first-column">Faraday's Constant:</td>
+				<td class="second-column"><input class="constant-values" type="number" name="R" value = "8.314" readonly></td>
+				<td>A-s/mol</td>
+			</tr>
+			<tr>
+				<td class="first-column">Universal Gas Constant:</td>
+				<td class="second-column"><input class="constant-values" type="number" name="F" value = "96485" readonly></td>
+				<td>J/mol-K</td>
+			</tr>
+			<tr>
+				<td class="first-column">Enter Temperature:</td>
+				<td class="second-column"><input class="table-values" type="number" name="Temp" value = "330" min="273" max="400" step="0.01" ></td>
+				<td>Kelvin(K)</td>
+			</tr>
+			<tr>
+				<td class="first-column">Enter Fuel Flow Rate:</td>
+				<td class="second-column"><input class="table-values" type="number" name="fuel_rate"  value = "84.5" min = "32" max = "100" step="0.1" ></td>
+				<td>Lpm</td>
+			</tr>
+			<tr>
+				<td class="first-column">Enter Pressure at Anode:</td>
+				<td class="second-column"><input class="table-values" type="number" name="P_anode" value="1" min = "1" max = "2" step = "0.1" ></td>
+				<td>Bar</td>
+			</tr>
+			<tr>
+				<td class="first-column">Enter Pressure at Cathode::</td>
+				<td class="second-column"><input class="table-values" type="number" name="P_cathode" value ="1" min = "0.5" max = "2" step = "0.1"></td>
+				<td>Bar</td> 
+			</tr>
+			<tr>
+				<td class="first-column">Enter Internal Resistance (ASR):</td>
+				<td class="second-column"><input class="table-values" type="number" name="R_ohm" value="0.18" min="0.03" max="10" step="0.001"></td>
+				<td>Ohm.cm.sq</td>
+			</tr>
+		</table> <br>
+		<div style="text-align: center;">
+		<input type="submit" value="Submit" id="subut"> <br> <br>
+		</div>
+	</form>
+	</main>
+</div>
+</div>
+	<footer class="footer">
+        <br>
+        <h4 class = footer-info> 
+            <img width ="20%" height ="25%"src="/Images/fcp_logo.png">Fuel Cell Perusal 
+            <br> <br> <br>
+        </h4>
+         <h4 class="footer-contact"><br><br>
+            Contact us : 
+            <br> 
+            <img height="3%" width="6%"src="/Images/email.png"> team.fuelcell.perusal@gmail.com 
+            <br>    
+            <img height="7%" width="6%"src="/Images/phone.png"> +91 9738465015
+        </h4>
+        <h4 class="visitor"> <br><br>
+            Visitor count : <img src="../Counter_images/counter.png" border="0" alt="web counter">
+        </h4>
+       
+	</footer>
+</body>
+</html>

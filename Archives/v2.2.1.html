@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fuel cell perusal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">   
+    <!--bootstrap links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="Images/fcp_logo.jpg">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body class="body-index">
+    <header>
+        <div id="top">
+            <img height = "10%"width = "100%" src="/Images/title_bg1.png">
+        </div>
+    </header>
+        <nav id="head">
+            <div class="navbar navbar-expand-md bg-dark navbar-dark" id="navigator">
+                    <!--navbar name-->
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.php"><i class='fas fa-home'></i> Home</a>     
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../fuelcells.html">Fuel cell fundamentals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../project.html">Model descriptions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../simulations.html">Simulations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../archive.html">Archives</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contactus.html">The Team</a>
+                        </li>                               
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+		<!-- Sidebar -->
+		<!-- <div class="sidebar">
+            <a class="sidebar-item" href="model1.html" style="color:green;">Input</a> <br>
+            <a href="#">Output</a> <br>
+            <a href="#">Detailed values</a> <br>
+            <a href="#">Download pdf report</a> <br>
+    </div> -->
+	<div class="container" id="superbody"> <!--holds both blocks-->
+	<div class="container" id="mainbody"> <!--block_1(formulae)-->
+		<main>
+			<h5 style="padding-top: 2%;"> This model calculates the Nernst voltage, activation losses, ohmic losses and mass transfer losses and outputs the polarization curve along with the power vs current density curve. </h5> <br>
+	</div>	
+	<div class="container" id="mainbody2"> <!--block_2(input)--> <br>
+			<h4><strong> Enter the input parameters in the form below : </strong></h4>
+			<form action="/Archives/v2.2.1.php" method="post">
+			<table class="my-special-table" border="4" bordercolor=white align="center">
+				<tr style="font-weight: 700;">
+					<td class="first-column"> Quantity </td>
+					<td> Value </td>
+					<td> Units </td>
+				</tr> <br>
+				<tr>
+					<td class="first-column">Ideal gas constant (R) : </td>
+					<td class="second-column"><input class="constant-values" type="number" name="R" value = "8.314" readonly></td>
+					<td> J/(mol K)</td> 
+				</tr>
+				<tr>
+					<td class="first-column">Faraday's constant (F) : </td>
+					<td class="second-column"><input class="constant-values" type="number" name="F" value = "96485" readonly></td>
+					<td> As/mol</td>
+				</tr>
+				<tr>
+					<td class="first-column">Number of moving electrons (z) : </td>
+					<td class="second-column"><input class="constant-values" type="number" name="z" value = "2" readonly></td>
+					<td> --- </td>
+				</tr>
+				<tr>
+					<td class="first-column">Temperature (T) : </td>
+					<td class="second-column"><input class="table-values" type="number" name="T" value = "330" min="273" max="400" step="0.01"></td>
+					<td> K </td>
+				</tr>
+				<tr>
+					<td class="first-column">Charge transfer coefficient (alpha) : </td>
+					<td class="second-column"><input class="table-values" type="number" name="alpha" value = "0.5" min="0" max="1" step="0.01"></td>
+					<td> --- </td>
+				</tr>	
+				<tr>
+					<td class="first-column">Limiting current density (iL) : </td>
+					<td class="second-column"><input class="table-values" type="number" name="il" value = "4" min="1" max="15" step="0.1"></td>
+					<td> A/cm2 </td>
+				</tr>
+				<tr>
+					<td class="first-column">Membrane thickness (Lm) : </td>
+					<td class="second-column"><input class="table-values" type="number" name="L_mem" value = "0.0178" min="0.0001" max="1" step="0.0001"></td>
+					<td> cm </td>
+				</tr>
+				<tr>
+					<td class="first-column">Cell activity area (A) : </td>
+					<td class="second-column"><input class="table-values" type="number" name="Area" value = "50" min="0.1" max="100" step="0.01"></td>
+					<td> cm2 </td>
+				</tr>
+				<tr>
+					<td class="first-column">Partial pressure of H2 (PH2) : </td>
+					<td class="second-column"><input class="table-values" type="number" name="PH2" value = "1" min="0" max="2" step="0.1"></td>
+					<td> Bar </td>
+				</tr>
+				<tr>
+					<td class="first-column">Partial pressure of O2 (PO2) : </td>
+					<td class="second-column"><input class="table-values" type="number" name="PO2" value = "1" min="0" max="2" step="0.1"></td>
+					<td> Bar </td>
+				</tr>
+			</table> <br>
+			<div style="text-align: center;">
+			<input type="submit" value="Submit" id="subut">
+			</div> 
+		</form>
+		</div>
+		</div>
+		</main>
+	<footer class="footer">
+        <br>
+        <h4 class = footer-info> 
+            <img width ="20%" height ="25%"src="/Images/fcp_logo.png">Fuel Cell Perusal 
+            <br> <br> <br>
+        </h4>
+         <h4 class="footer-contact"><br><br>
+            Contact us : 
+            <br> 
+            <img height="3%" width="6%"src="/Images/email.png"> team.fuelcell.perusal@gmail.com 
+            <br>    
+            <img height="7%" width="6%"src="/Images/phone.png"> +91 9738465015
+        </h4>
+        <h4 class="visitor"> <br><br>
+            Visitor count : <img src="Counter_images/counter.png" border="0" alt="web counter">
+        </h4>
+       
+	</footer>
+</body>
+</html>

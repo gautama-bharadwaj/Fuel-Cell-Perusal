@@ -1,0 +1,559 @@
+/*Google charts display for php files styling start*/
+#navigator{
+overflow: hidden;
+}
+#formula{
+border-style: solid;
+border-radius: 29px;
+border-top: 2%;
+padding-bottom: 20px;
+}
+#polarization{
+border-style: solid;
+border-top: 2%;
+overflow: scroll;
+}
+#power{
+border-style: solid;
+border-top: 2%;
+overflow: scroll;
+}
+#powerandpolarization{
+border-style: solid;
+border-top: 2%;
+overflow: scroll;
+}
+#everything{
+border-style: solid;
+border-top: 2%;
+overflow: scroll;
+}
+/*Google charts display for php files styling end*/
+
+
+
+/*Marquee text updated on index.html start*/
+
+/* .awesome { 
+  font-family:sans-serif;
+  
+  width:100%;
+  
+  margin: 0 auto;
+  text-align:left;
+  
+  color:#fbbc05;
+  font-size:25px;
+  font-weight: bold;
+  position: absolute;
+  animation:colorchange 20s infinite alternate;
+}*/
+.container-fluid{
+  background-color: #B5C4B9;
+}
+/*
+@keyframes colorchange {
+0% { 
+  color:#fbbc05;
+}
+
+10% {
+  color:#4285f4;
+}
+
+20% {
+  color:#34a853;
+}
+
+30% {        
+  color:#ea4335;
+}
+
+40% {
+  color:#fbbc05;
+}
+
+50% {
+  color:#4285f4;
+}
+
+60% { 
+  color:#34a853;
+}
+
+70% {
+  color:#ea4335;
+}
+80% {    
+  color:#fbbc05;
+}
+
+90% {
+  color:#4285f4;
+}
+
+100% {  
+  color:#34a853;
+}
+} */
+/*Marquee text updated on index.html start*/
+
+
+
+
+
+/*About us page styling start*/
+
+.card-container{
+  text-align: center;
+}
+.card{
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.container-contact {
+  text-align: center;
+  padding-right: 
+  width: 50%;
+}
+
+    /* Clear floats */
+.container-contact::after, .row::after {
+  content: "";
+  clear: both;
+  display:block;
+}
+.title-position {
+  color: grey;
+}
+
+.button-contact {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button-contact:hover {
+  background-color: #555;
+}
+/*About us page styling end*/
+
+
+
+
+
+/*Footer styling start*/
+.footer{
+  z-index: 5;
+  position: relative;
+  bottom: 0;
+  background-color: #343a40;
+  width: 100%;
+  display: inline-block;
+  padding-bottom: 2%;
+}
+.visitor{
+  width: 25%;
+  font-size: 100%;
+  float:right;
+  display: inline-block;
+  text-align: right;
+  padding-right: 5%;
+  color: #ffffff;
+}
+.footer-info{
+  font-size: 100%;
+  padding-left: 2%;
+  display: inline-block;
+  width: 38%;
+  float: left;
+  color: #ffffff;
+}
+.footer-contact{
+  font-size: 100%;
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+  color: #ffffff;
+}
+/*@media screen and (max-width: 700px) {
+    .visitor {
+      font-size: 14px;
+    }
+    .footer-info{
+      font-size: 14px;
+    }
+    .footer-contact{
+      font-size:14px;
+    }
+  }*/
+/* Some left and right padding inside the container */
+
+/*Footer styling end*/
+
+
+
+/*Body content styling for all html and php files start*/
+#title-text{
+  text-align: center;
+  color: #ffffff;
+}
+
+#subtitle-text{
+  text-align: center;
+  color: #ffffff;
+}
+body{
+  background-image: url('/Images/homepage_bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right center;
+  background-size: cover;
+}
+.body-text{
+  text-align: justify;
+  color: #ffffff;
+}
+#super{
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+}
+h2{
+    text-align: center;
+    color: #ffffff;
+}
+#atag{
+    padding-right: 20px;
+}
+#mainbody{
+    border-style: solid;
+    border-radius: 29px;
+    float: initial;
+    overflow: visible;
+    margin-bottom: 2%;
+    background: rgba(36, 94, 128,0.75);
+}
+#mainbody2{
+    border-style: solid;
+    border-radius: 29px;
+    float: initial;
+    overflow: visible;
+    margin-bottom: 2%;
+    padding-bottom: 3%;
+    background: rgba(36, 94, 128,0.75);
+}
+#superbody{/*
+    background-color: #122f40;
+    opacity: 0.6;*/
+    padding-top: 5%;
+    /*padding-left: 5%;*/
+    padding-bottom: 5%;
+}
+
+.container{
+  color: #ffffff;
+}
+.download-link{
+  color:#80fff0;
+}
+/*Body content styling for all html and php files start*/
+
+
+
+
+
+/*Navigation bar styling start*/
+.nav-item{
+    width: 20%;
+    padding-right: 1%;
+    padding-left: 1%;
+    text-align: center;
+    white-space: nowrap;
+    /* display: inline-block; */
+}
+.navbar-nav{
+  width: 100%;
+}
+.nav-link{
+    border-style: solid;
+    border-radius: 29px;
+    overflow: hidden;
+    
+}
+.nav-link:hover{
+    background-color: #949ca8;
+    color: #000000;
+  }
+/*Navigation bar styling end*/
+
+
+
+
+/*Table and submit button styling start*/
+input[type=submit]{
+    background-color: #76A0F5;
+    color: #FCFFE6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 29px;
+    font-weight: bold;
+}
+#subut:hover{
+    background-color: #497DF5;
+}
+.my-special-table{
+    width: 80%;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: left;
+    overflow: scroll;
+}
+.first-column{
+    width:40%;
+}
+.second-column{
+    width:30%;
+}
+.constant-values{
+  background-color: #e8a39e;
+  width: 100%; 
+  text-align: left;
+}
+.table-values{
+    background-color: #b1bdb3;
+    width: 100%; 
+    text-align: left;
+}
+.table-indent{
+    text-align:left;
+  }
+/*Table styling end*/
+
+
+
+
+
+/*Simulation.html choices styling start*/
+#wp_choice{
+    background-color:#7c858a;
+    font-weight: 500;
+    font-size: x-large;
+    border-style: solid;
+    padding: 16px;
+    border-radius: 29px;
+    display: table-cell;
+    text-align: center;
+    float:left;
+}
+#wp_choice a{
+    color:#ffffff;;
+}
+#wp_choice a:hover{
+    color:#115B84;
+}
+.dropbtn {
+  background-color:#7c858a;
+  color:#ffffff;
+  padding: 16px;
+  font-size: x-large;
+  font-weight: 500;
+  border: solid;
+  border-radius: 29px;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #7c858a;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color:#ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  border: solid;
+  border-radius: 29px;
+  background-color: #f1f1f1;
+  color: #115B84;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  border: solid;
+  border-radius: 29px;
+  border-style: solid;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  color: #115B84;
+  text-decoration: underline;
+}
+/*Simulation.html choices styling end*/
+
+
+
+
+/*Header styling start*/
+#head{
+   position: sticky;
+   top: 0;
+   z-index: 2;
+   background-color: #1e2120;
+}
+#top{
+/*background-image: url("/Images/s.jpg");
+background-position: right;
+background-size: cover;*/
+background-color: #060424;
+opacity: 1;
+padding: none;
+color: #FFFFFF;
+width: 100%;
+position: relative;
+z-index: 5;
+}
+/*Header styling end*/
+
+
+
+
+
+/*What is this code i do not know*/
+#img{
+    text-align: center;
+    font-size: large;
+}
+tr{
+    text-align: center;
+}
+#mainbody_mod1{
+    float: initial;
+    overflow: visible;
+    margin-bottom: 2%;
+    padding-top:2%;
+    z-index: 5;
+}
+/*What is this code i do not know*/
+
+
+
+
+/*Sidebar styling start*/
+
+.sidebar {
+margin: 0;
+float:left;
+width: 200px;
+background-color: #343a40;
+position: fixed;
+top: 0;
+padding-top: 18%;
+padding-bottom: 5%;
+height: 100%;
+z-index: -3;
+overflow: auto;
+}
+
+.sidebar a {
+display: block;
+border: solid;
+border-radius: 29px;
+color: #ffffff;
+text-align: center;
+padding: 16px;
+text-decoration: none;
+}
+
+.sidebar a.active {
+background-color: #FFE34A;
+color: black;
+}
+
+.sidebar a:hover:not(.active) {
+background-color: #212529;
+color: white;
+}
+@media screen and (max-width: 700px) {
+.sidebar {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.sidebar a {float: left;}
+div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+.sidebar a {
+  text-align: center;
+  float: none;
+}
+}
+/*Sidebar styling end*/
+
+@media screen and (max-width: 700px){
+
+  .nav-item{
+
+    font-size: 10px;
+    width: 100%;
+  }
+  .footer{
+    font-size: 10px;
+  }
+  #img{
+    overflow: scroll;
+  }
+  .my-special-table{
+    font-size: 12px;
+  }
+  #gif-img{
+    width:100%;
+    overflow: scroll;
+  }
+}
+#bg_mod1{
+  background-color: #245E80; 
+  opacity: 0.75;
+  border-style: solid;
+  border-radius: 29px;
+}
