@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--sitemap for www.fuelcellperusal.com-->
+
+
+<url>
+  <loc>http://www.fuelcellperusal.com/</loc>
+  <lastmod>2020-07-01T10:51:02+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.fuelcellperusal.com/index.php</loc>
+  <lastmod>2020-07-01T10:51:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fuelcellperusal.com/fuelcells.html</loc>
+  <lastmod>2020-03-11T11:11:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fuelcellperusal.com/simulations.html</loc>
+  <lastmod>2020-03-11T11:11:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fuelcellperusal.com/prognostics.html</loc>
+  <lastmod>2020-03-11T11:11:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fuelcellperusal.com/archive.html</loc>
+  <lastmod>2020-03-11T11:12:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fuelcellperusal.com/contactus.html</loc>
+  <lastmod>2020-03-11T11:11:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.fuelcellperusal.com/model1.html</loc>
+  <lastmod>2020-03-11T11:11:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.fuelcellperusal.com/model2.html</loc>
+  <lastmod>2020-03-11T11:11:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.fuelcellperusal.com/method1.html</loc>
+  <lastmod>2020-03-12T06:17:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.fuelcellperusal.com/Archives/v1.0.1.html</loc>
+  <lastmod>2020-03-11T11:12:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.fuelcellperusal.com/Archives/v1.1.1.html</loc>
+  <lastmod>2020-03-11T11:12:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.fuelcellperusal.com/Archives/v2.0.1.html</loc>
+  <lastmod>2020-03-11T11:12:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.fuelcellperusal.com/Archives/v2.1.1.html</loc>
+  <lastmod>2020-03-11T11:12:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.fuelcellperusal.com/Archives/v2.2.1.html</loc>
+  <lastmod>2020-03-11T11:12:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
