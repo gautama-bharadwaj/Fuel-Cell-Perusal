@@ -9,8 +9,8 @@ Harikrishnan U
 Navedya Ojha
 Venu Bhargav
 
-Website link - https://gautama-bharadwaj.github.io/Fuel-Cell-Perusal/
-(originally http://fuelcellperusal.com/)
+Website link - https://fuelcellperusal.com/
+(hosted on GitHub Pages)
 
 ## How the site runs now
 
