@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">   
     <!--bootstrap links-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>    
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/popper.min.js"></script>
+    <script src="vendor/bootstrap.min.js"></script>    
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/jpg" sizes="32x32" href="Images/fcp_logo.jpg">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
 </head>
 <body class="body-index">
     <header>
         <div id="top">
-            <img height = "10%"width = "100%" src="/Images/title_bg1.png">
+            <img height = "10%"width = "100%" src="Images/title_bg1.png">
         </div>
     </header>
         <nav id="head">
@@ -31,7 +31,7 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php"><i class='fas fa-home'></i> Home</a>     
+                            <a class="nav-link" href="index.html"><i class='fas fa-home'></i> Home</a>     
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="fuelcells.html">Fuel cell fundamentals</a>
@@ -55,7 +55,7 @@
     <div class="container" id="super">
         <div class="card-container">
         <div class="card">
-          <img width="95" src="/Images/anand.jpg" alt="Dr. Anand Shivapuji" style= "border-radius: 50%">
+          <img width="95" src="Images/anand.jpg" alt="Dr. Anand Shivapuji" style= "border-radius: 50%">
           <div class="container-contact">
             <h2 class="title-position">Dr. Anand Shivapuji</h2>
             <p class="title-position">Mentor</p>
@@ -66,7 +66,7 @@
       </div> <br>
       <div class="card-container">
         <div class="card">
-          <img width="95" src="/Images/gb.jpg" alt="Gautama" style="border-radius: 50%">
+          <img width="95" src="Images/gb.jpg" alt="Gautama" style="border-radius: 50%">
           <div  class="container-contact">
             <h2 class="title-position">Gautama Bharadwaj</h2>
             <p class="title-position">Research Associate &amp; Developer</p>
@@ -78,7 +78,7 @@
 
       <div class="card-container">
         <div class="card">
-          <img width="95" src="/Images/pp.jpg" alt="Harikrishnan" style="border-radius: 50%">
+          <img width="95" src="Images/pp.jpg" alt="Harikrishnan" style="border-radius: 50%">
           <div  class="container-contact">
             <h2 class="title-position">Harikrishnan U.</h2>
             <p class="title-position">Research Associate &amp; Developer</p>
@@ -90,7 +90,7 @@
 
       <div class="card-container">
         <div class="card">
-          <img width="95" src="/Images/navedya.jpg" alt="Navedya" style="border-radius: 50%">
+          <img width="95" src="Images/navedya.jpg" alt="Navedya" style="border-radius: 50%">
           <div  class="container-contact">
             <h2 class="title-position">Navedya Ojha</h2>
             <p class="title-position">Research Associate &amp; Developer</p>
@@ -101,7 +101,7 @@
       </div><br>
       <div class="card-container">
         <div class="card">
-          <img width="95" src="/Images/venu.jpg" alt="Venu" style="border-radius: 50%">
+          <img width="95" src="Images/venu.jpg" alt="Venu" style="border-radius: 50%">
           <div  class="container-contact">
             <h2 class="title-position">Venu Bhargav Valluri </h2>
             <p class="title-position">Designer and Developer</p>
@@ -114,20 +114,21 @@
       <footer class="footer">
         <br>
         <h4 class = footer-info> 
-            <img width ="20%" height ="25%"src="/Images/fcp_logo.png">Fuel Cell Perusal 
+            <img width ="20%" height ="25%"src="Images/fcp_logo.png">Fuel Cell Perusal 
             <br> <br> <br>
         </h4>
          <h4 class="footer-contact"><br><br>
             Contact us : 
             <br> 
-            <img height="3%" width="6%"src="/Images/email.png"> team.fuelcell.perusal@gmail.com 
+            <img height="3%" width="6%"src="Images/email.png"> team.fuelcell.perusal@gmail.com 
             <br>    
-            <img height="7%" width="6%"src="/Images/phone.png"> +91 9738465015
+            <img height="7%" width="6%"src="Images/phone.png"> +91 9738465015
         </h4>
         <h4 class="visitor"> <br><br>
-            Visitor count : <img src="Counter_images/counter.png" border="0" alt="web counter">
+            Visitor count : <span class="visitor-count">199</span>
         </h4>
        
     </footer>
+<script src="js/counter.js"></script>
 </body>
 </html>
