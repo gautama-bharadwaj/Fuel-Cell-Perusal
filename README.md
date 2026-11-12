@@ -1,16 +1,45 @@
 # Fuel-Cell-Perusal
 
-Source code for the Fuel Cell Perusal website.
+Source code for the Fuel Cell Perusal website: https://fuelcellperusal.com/
 
-Contributors:
+Fuel Cell Perusal is a website about fuel cells, a clean and renewable source of energy. It lets you simulate a
+proton exchange membrane fuel cell (PEMFC) in your browser and see how its operating conditions affect its performance.
+
+> **About this archive:** Fuel Cell Perusal was built in 2020 as an engineering project by the team listed below.
+> It is kept online here as an archive of that work. The simulator still works as it did then, but the site is no
+> longer being developed.
+
+## What the simulator does
+
+You enter the fuel cell's parameters, and the site calculates:
+
+- the **Nernst (open-circuit) voltage**
+- the three voltage losses at each current:
+  - **activation loss**, the energy needed to get the reactions going
+  - **ohmic loss**, caused by the resistance of the membrane and cell
+  - **concentration loss**, which occurs as the cell nears its limiting current
+- the resulting **cell voltage** (the polarization curve) and **power output**
+
+The results are shown as a table and as charts. You can also download a PDF report with your inputs, the results
+table and the charts.
+
+There are two models:
+
+| Model | Latest version | What you enter | Use it for |
+| --- | --- | --- | --- |
+| **Model 1: with polarization curve** | v1.1.1 | Points read off the manufacturer's polarization curve (V1, Vmin, Vnom, Imax, Inom, Eoc), plus temperature, number of cells and gas partial pressures | Analysing the losses of a real cell or stack from its datasheet |
+| **Model 2: without polarization curve** | v2.2.1 | General parameters: temperature, charge transfer coefficient, limiting current density, membrane thickness, active cell area and gas partial pressures | Exploring a single cell without a datasheet. Membrane (ionic) resistance is calculated from the inputs. |
+
+Earlier versions (v1.0.1, v2.0.1 and v2.1.1) still work and can be opened from the **Archives** page, together with
+the Excel versions of the models. The **Fuel cell fundamentals** and **Model descriptions** pages explain the
+background and the two models.
+
+## Contributors
 
 Gautama Bharadwaj
 Harikrishnan U
 Navedya Ojha
 Venu Bhargav
-
-Website link - https://fuelcellperusal.com/
-(hosted on GitHub Pages)
 
 ## How the site runs now
 
