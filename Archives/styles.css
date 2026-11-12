@@ -211,7 +211,7 @@ overflow: scroll;
   color: #ffffff;
 }
 body{
-  background-image: url('/Images/homepage_bg.jpg');
+  background-image: url('../Images/homepage_bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: right center;
@@ -534,4 +534,11 @@ div.content {margin-left: 0;}
   opacity: 0.75;
   border-style: solid;
   border-radius: 29px;
+}
+/* Visitor count: the old site drew the number as a small white image (PHP GD font) */
+.visitor-count {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8em;
+  font-weight: normal;
+  color: white;
 }

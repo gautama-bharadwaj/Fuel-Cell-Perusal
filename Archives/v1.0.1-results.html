@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fuel cell perusal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">   
+    <!--bootstrap links-->
+    <link rel="stylesheet" href="../vendor/bootstrap.min.css">
+    <script src="../vendor/jquery.min.js"></script>
+    <script src="../vendor/popper.min.js"></script>
+    <script src="../vendor/bootstrap.min.js"></script>    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="Images/fcp_logo.jpg">
+    <link rel="stylesheet" href="../vendor/fontawesome/css/all.min.css">
+</head>
+<body class="body-index">
+    <header>
+        <div id="top">
+            <img height = "10%"width = "100%" src="../Images/title_bg1.png">
+        </div>
+    </header>
+       <nav id="head">
+            <div class="navbar navbar-expand-md bg-dark navbar-dark" id="navigator">
+                    <!--navbar name-->
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html"><i class='fas fa-home'></i> Home</a>     
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../fuelcells.html">Fuel cell fundamentals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../project.html">Model descriptions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../simulations.html">Simulations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../archive.html">Archives</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contactus.html">The Team</a>
+                        </li>                               
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+		<!-- Sidebar -->
+		<!-- <div class="sidebar">
+            <a class="sidebar-item" href="model1.html" style="color:green;">Input</a> <br>
+            <a href="#"  style="color:green;">Output</a> <br>
+            <a href="#">Detailed values</a> <br>
+            <a href="#">Download pdf report</a> <br>
+    	</div> -->
+	<div class="container" id="superbody"> <!--holds both blocks-->
+    <div class="container" id="mainbody"> <!--block_1(formulae)-->
+	<main>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script type="text/javascript" src="../js/models.js"></script>
+		<script type="text/javascript" src="../js/results.js"></script>
+		<script type="text/javascript" src="../vendor/jspdf.umd.min.js"></script>
+		<script type="text/javascript" src="../js/fpdf.js"></script>
+		<script type="text/javascript" src="../js/reports.js"></script>
+		<script type="text/javascript" src="../js/report.js"></script>
+		<script type="text/javascript">FCPRun("v1.0.1");</script>
+
+		<form id="report-form" align="center">
+			<br>
+			<p style="font-weight: 600; text-align: center;"> The values you have entered are : </p>
+				<table class="my-special-table" border="4" bordercolor=white align="center">
+					<tr style="font-weight: 700;">
+						<td class="first-column"> Quantity </td>
+						<td class="second-column"> Value </td>
+						<td> Units </td>
+					</tr> <br>
+					<tr>
+						<td class="first-column">Ideal gas constant (R) : </td>
+						<td class="second-column"> <input class="constant-values" type="number" name="R" value="" data-fcp-param="R" readonly></td>
+						<td> J/(mol K)</td>
+					</tr>
+					<tr>
+						<td class="first-column">Faraday's constant (F) : </td>
+						<td class="second-column"><input class="constant-values" type="number" name="F" value="" data-fcp-param="F" readonly></td>
+						<td> As/mol</td>
+					</tr>
+					<tr>
+						<td class="first-column">Number of moving electrons (z) : </td>
+						<td class="second-column"><input class="constant-values" type="number" name="z" value="" data-fcp-param="z" readonly></td>
+						<td> --- </td>
+					</tr>
+					<tr>
+						<td class="first-column">Temperature (T) : </td>
+						<td class="second-column"><input class="table-values" type="number" name="T" value="" data-fcp-param="T" readonly></td>
+						<td> K </td>
+					</tr>
+					<tr>
+						<td class="first-column">Charge transfer coefficient (alpha) : </td>
+						<td class="second-column"><input class="table-values" type="number" name="alpha" value="" data-fcp-param="alpha" readonly></td>
+						<td> --- </td>
+					</tr>
+					<tr>
+						<td class="first-column">V1 : </td>
+						<td class="second-column"><input class="table-values" type="number" name="V1" value="" data-fcp-param="V1"  readonly></td>
+						<td> V </td>
+					</tr>
+					<tr>
+						<td class="first-column">Vmin : </td>
+						<td class="second-column"><input class="table-values" type="number" name="Vmin" value="" data-fcp-param="Vmin"  readonly></td>
+						<td> V </td>
+					</tr>
+					<tr>
+						<td class="first-column">Vnom : </td>
+						<td class="second-column"><input class="table-values" type="number" name="Vnom" value="" data-fcp-param="Vnom"  readonly></td>
+						<td> V </td>
+					</tr>
+					<tr>
+						<td class="first-column">Imax : </td>
+						<td class="second-column"><input class="table-values" type="number" name="Imax" value="" data-fcp-param="Imax"  readonly></td>
+						<td> A </td>
+					</tr>
+					<tr>
+						<td class="first-column">Inom : </td>
+					 	<td class="second-column"><input class="table-values" type="number" name="Inom" value="" data-fcp-param="Inom"  readonly></td>
+						<td> A </td>
+					</tr>
+					<tr>
+						<td class="first-column">Eoc : </td>
+						<td class="second-column"><input class="table-values" type="number" name="Eoc" value="" data-fcp-param="Eoc"  readonly></td>
+						<td> V </td>
+					</tr>
+					<tr>
+						<td class="first-column">Pressure : </td>
+						<td class="second-column"><input class="table-values" type="number" name="Pressure" value="" data-fcp-param="Pressure"  readonly></td>
+						<td> bar </td>
+					</tr>
+					<tr>
+						<td class="first-column">Partial pressure of H2 (PH2) : </td>
+						<td class="second-column"><input class="table-values" type="number" name="PH2" value="" data-fcp-param="PH2"  readonly></td>
+						<td> bar </td>
+					</tr>
+					<tr>
+						<td class="first-column">Partial pressure of O2 (PO2) : </td>
+						<td class="second-column"><input class="table-values" type="number" name="PO2" value="" data-fcp-param="PO2"  readonly></td>
+						<td> bar </td>
+					</tr>
+					<tr>
+						<td class="first-column">Partial pressure of H2O (PH2O) : </td>
+						<td class="second-column"><input class="table-values" type="number" name="PH20" value="" data-fcp-param="PH2O"  readonly></td>
+						<td> bar </td>
+					</tr>
+					<tr>
+						<td class="first-column">Area: </td>
+						<td class="second-column"><input class="table-values" type="number" name="A" value="" data-fcp-param="A"  readonly></td>
+						<td> cm2 </td>
+					</tr>
+				</table> <br>
+<p><script type="text/javascript">document.write(FCP.echo);</script></p>
+<input id="subut" type="submit" value="Download PDF report">
+</form> 
+</main>
+</div>
+</div>
+<footer class="footer">
+        <br>
+        <h4 class = footer-info> 
+            <img width ="20%" height ="25%"src="../Images/fcp_logo.png">Fuel Cell Perusal 
+            <br> <br> <br>
+        </h4>
+         <h4 class="footer-contact"><br><br>
+            Contact us : 
+            <br> 
+            <img height="3%" width="6%"src="../Images/email.png"> team.fuelcell.perusal@gmail.com 
+            <br>    
+            <img height="7%" width="6%"src="../Images/phone.png"> +91 9738465015
+        </h4>
+        <h4 class="visitor"> <br><br>
+            Visitor count : <span class="visitor-count">199</span>
+        </h4>
+       
+	</footer>
+<script src="../js/counter.js"></script>
+</body>
+</html>
