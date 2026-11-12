@@ -6,6 +6,10 @@ Fuel Cell Perusal is a website about fuel cells, a clean and renewable source of
 proton exchange membrane fuel cell (PEMFC) in your browser and see how its operating conditions affect its performance.
 It started as a research project.
 
+> **About this archive:** Fuel Cell Perusal was built in 2020 as an engineering project by the team listed below.
+> It is kept online here as an archive of that work. The simulator still works as it did then, but the site is no
+> longer being developed.
+
 ## What the simulator does
 
 You enter the fuel cell's parameters, and the site calculates:
